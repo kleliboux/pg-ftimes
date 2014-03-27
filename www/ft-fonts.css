@@ -1,0 +1,88 @@
+  /**************************************
+   ** Clarion (body)
+   *************************************/
+  @font-face {
+    font-family: 'Clarion';
+    src: url(fonts/Clarion.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+  @font-face {
+    font-family: 'Clarion';
+    src: url(fonts/Clarion-Bold.ttf) format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+  @font-face {
+    font-family: 'Clarion';
+    src: url(fonts/Clarion-Italic.ttf) format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+  /**************************************
+   ** Miller Display (headlines)
+   *************************************/
+  /* normal */
+  @font-face {
+    font-family: 'MillerDisplay';
+    src: url(fonts/MillerDisplay-Roman.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+  /* semi-bold */
+  @font-face {
+    font-family: 'MillerDisplay';
+    src: url(fonts/MillerDisplay-Semibold.ttf) format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+  /* bold */
+  @font-face {
+    font-family: 'MillerDisplay';
+    src: url(fonts/MillerDisplay-Bold.ttf) format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+  /**************************************
+   ** Benton Sans (headline & body)
+   *************************************/
+  @font-face {
+    font-family: 'BentonSans';
+    src: url(fonts/BentonSansRegular.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+  @font-face {
+    font-family: 'BentonSans';
+    src: url(fonts/BentonSansBold.ttf) format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+  @font-face {
+    font-family: 'BentonSans';
+    src: url(fonts/BentonSansRegularItalic.ttf) format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+  @font-face {
+    font-family: 'BentonSansBlack';
+    src: url(fonts/BentonSansBlack.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+  @font-face {
+    font-family: 'BentonSansLight';
+    src: url(fonts/BentonSansLight.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,0 +1,318 @@
+/* Feuille de style du TP Financial Times */
+
+
+/* Annulation des marges pour tous les éléments */
+*, figure {
+	margin: 0;
+	padding: 0;
+}
+
+/* Bases */
+.spacer {
+	height: 0;
+	clear: both;
+}
+
+figure img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+body {
+	background-color: rgb(255, 241, 224);
+}
+
+a, a:hover, a:visited, a:active {
+	text-decoration: none;
+	color: inherit;
+}
+
+/* Mise en page globale */
+#wrap {
+	max-width: 1024px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+	/* Essai 1 - En pourcentages */
+/*
+	#artlist {
+		float: left;
+		width: 63%;
+		margin-left: 2%;
+		margin-right: 3%;
+	}
+
+	#artlist-aside {
+		float: left;
+		width: 30%;
+		margin-right: 2%;
+	}
+*/
+
+	/* Essai 2 - En pourcentages avec espaces fixes de 16px */
+/*
+	#artlist {
+		float: left;
+		box-sizing: border-box;
+		width: 70%;
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+
+	#artlist-aside {
+		float: left;
+		box-sizing: border-box;
+		width: 30%;
+		padding-right: 16px;
+	}
+*/
+
+	/* Essai 3 - Avec sidebar fixe (plus de flottants) */
+	#artlist {
+		display: table-cell;
+		vertical-align: top;
+		max-width: 676px;
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+
+	#artlist-aside {
+		display: table-cell;
+		vertical-align: top;
+		width: 300px;
+		padding-right: 16px;
+	}
+
+
+/* Texte */
+#wrap-header h1 {
+	font-family: MillerDisplay, Georgia, serif;
+	font-size: 15px;
+	font-weight: normal;
+	color: rgb(51, 51, 51);
+	text-transform: uppercase;
+	text-align: center;
+} 
+
+#wrap-header h1 span {
+	font-size: 11px;
+}
+
+#wrap-header h2 {
+	font-family: MillerDisplay, Georgia, serif;
+	font-size: 44px;
+	font-weight: normal;
+	color: rgb(158, 47, 80);
+	text-transform: uppercase;
+	text-align: center;
+} 
+
+#alaune h3 {
+    font-family: MillerDisplay, Georgia, serif;
+    font-size: 44px;
+    font-weight: normal;
+    color: rgb(51,51,51);    
+}
+
+#alaune p {
+    font-family: Clarion, Georgia, serif;
+    font-size: 16px;
+    color: rgb(119,119,119);
+}
+
+#artlist time {
+	display: block;
+    color: rgb(119, 119, 119);
+    font-family: BentonSans, Arial, sans-serif;
+    font-size: 11px;
+}
+
+#artlist h3 {
+    font-family: MillerDisplaySemiBold, Georgia, serif;
+    font-size: 21px;
+    font-weight: normal;
+}
+
+#artlist p {
+    color: rgb(51, 51, 51);
+    font-family: Clarion, Georgia, serif;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+
+#artlist-aside h3 {
+    color: rgb(51, 51, 51);
+    font-family: BentonSansBlack, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+#artlist-aside h4 {
+    color: rgb(51, 51, 51);
+    font-family: BentonSans, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+#artlist-aside article p {
+    color: rgb(51, 51, 51);
+    font-family: BentonSans, Arial, sans-serif;
+    font-size: 12px;
+}
+
+/* Mise en page des articles */
+#artlist article figure {
+	float: left;
+	margin-right: 10px;
+	width: 160px;
+}
+
+#artlist article {
+	clear: left;
+}
+
+#alaune {
+	text-align: center;
+}
+
+#alaune figure {
+	margin-left: 16px;
+	margin-right: 16px;
+}
+
+#alaune figure img {
+	width: 100%;
+}
+
+div.pub img {
+	width: 100%;
+}
+
+/* Filets */
+#wrap-header {
+	border-bottom: 5px solid rgb(158, 47, 80);
+	margin-bottom: 16px;
+}
+
+#alaune h3 {
+    border-bottom: 1px solid rgb(224, 213, 197);
+    display: inline-block;
+}
+
+#artlist article {
+    border-bottom: 1px solid rgb(233, 222, 207);
+}
+
+#artlist article:last-child {
+    border-bottom: none;
+}
+
+#artlist-aside article {
+	border-top: 3px solid rgb(127, 127, 127);
+}
+
+/* Pied de page */
+#wrap-footer {
+    font-family: BentonSans, Arial, sans-serif;
+    font-size: 12px;
+    background-color: rgb(116, 115, 108);
+    color: rgb(255, 255, 255);
+    padding-left: 16px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* Espacements verticaux */
+#wrap-header {
+	margin-top: 16px;
+}
+
+#alaune {
+	margin-bottom: 16px;
+}
+
+#alaune h3 {
+	margin-top: 8px;
+    padding-bottom: 12px;
+    margin-bottom: 10px;
+}
+
+#artlist article {
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+}
+
+#artlist article h3 {
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+#artlist-aside article {
+	margin-bottom: 16px;
+}
+
+#artlist-aside article h3 {
+	margin: 8px 0;
+}
+
+#artlist-aside article h4 {
+	margin-bottom: 8px;
+}
+
+#artlist-aside .pub {
+	margin-top: 16px;
+}
+
+/* Page article simple */
+#single h3 {
+    font-family: MillerDisplay, Georgia, serif;
+    font-size: 44px;
+    font-weight: normal;
+    color: rgb(51,51,51);
+    margin-bottom: 32px;   
+}
+
+#single header p {
+	font-family: Clarion, Georgia, serif;
+    font-size: 16px;
+    color: rgb(119,119,119);
+    margin-top: 32px;
+}
+
+#single header {
+	display: table-cell;
+	vertical-align: top;
+	width: 300px;
+	padding-right: 32px;
+	padding-left: 16px;
+}
+
+#single-corpus {
+	display: table-cell;
+	vertical-align: top;
+	max-width: 600px;
+	padding-right: 16px;
+}
+
+#single-corpus p {
+	font-family: Clarion, Georgia, serif;
+    font-size: 14px;
+    color: rgb(51,51,51);    
+	margin-bottom: 16px;
+	line-height: 150%;
+}
+
+
+#single time{
+	display: block;
+    color: rgb(119, 119, 119);
+    font-family: BentonSans, Arial, sans-serif;
+    font-size: 11px;
+}
+
+#single figure {
+	margin: 0 0 16px 0;
+}

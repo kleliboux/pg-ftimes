@@ -1,43 +1,219 @@
-<!DOCTYPE html>
-<!--
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>TP Financial Times</title>
+  <link rel="stylesheet" href="ft-fonts.css">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport"  content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-    http://www.apache.org/licenses/LICENSE-2.0
+  <link rel="apple-touch-startup-image" href="startup/748x1024.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)">
 
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>Hello World</title>
-    </head>
-    <body>
-        <div class="app">
-            <h1>PhoneGap</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
-        </div>
-        <script type="text/javascript" src="phonegap.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript">
-            app.initialize();
-        </script>
-    </body>
+  <link rel="apple-touch-startup-image" href="startup/768x1004.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)">  
+
+  <link rel="apple-touch-icon" href="icon.png">
+
+
+  <script src="js/jquery-2.0.3.min.js"></script>
+  <script src="js/swipe.js"></script>
+  <script src="js/demo.js"></script>
+</head>
+
+<body>
+
+	<div class='swipe'>
+	    <div>
+			<section id="wrap">
+				<header id="wrap-header">
+					<h1>FT <span>Weekend</span></h1>
+					<h2>House &amp; Home</h2>
+				</header>
+
+				<section id="content">
+					<article id="alaune">
+						<figure>
+							<img src="articles/main.jpeg" width="748" height="300">
+						</figure>
+						<h3>The dog bed and the Cézannes</h3>
+						<p>Robin Lane Fox visits the Barnes Foundation in Philadelphia, new home to the philanthropist’s incredible art collection</p>
+					</article>
+
+					<section id="artlist">
+						<a href="article1.html">		
+							<article>
+								<time>9:51 PM Friday</time>
+								<h3>At home: Donna Karan</h3>
+								<figure>
+									<img src="articles/art1.jpeg">
+								</figure>
+								<p>The fashion designer and yogi tells Helen Chislett how her late husband, Stephan Weiss, taught her the importance of a process he called ‘connect the dots’</p>
+								<div class="spacer"></div>
+							</article>
+						</a>
+						<article>
+							<time>9:51 PM Friday</time>
+							<h3>White lights, big city</h3>
+							<figure>
+								<img src="articles/art2.jpeg">
+							</figure>
+							<p>Despite fears over the eurozone crisis, an increase in tourism has improved prospects for investors and buyers of second homes in Lisbon, writes Mary Wilson</p>
+							<div class="spacer"></div>
+						</article>
+						<article>
+							<time>9:51 PM Friday</time>
+							<h3>New builds, new Delhi</h3>
+							<figure>
+								<img src="articles/art3.jpeg">
+							</figure>
+							<p>While prices may be high in the Indian capital, there are lots of excellent deals to be found in nearby Noida and Gurgaon, writes Avantika Chilkoti</p>
+							<div class="spacer"></div>
+						</article>
+						<article>
+							<time>9:51 PM Friday</time>
+							<h3>White lights, big city</h3>
+							<figure>
+								<img src="articles/art4.jpeg">
+							</figure>
+							<p>Despite fears over the eurozone crisis, an increase in tourism has improved prospects for investors and buyers of second homes in Lisbon, writes Mary Wilson</p>
+							<div class="spacer"></div>
+						</article>
+						<article>
+							<time>9:51 PM Friday</time>
+							<h3>Creation out of devastation</h3>
+							<figure>
+								<img src="articles/art5.jpeg">
+							</figure>
+							<p>Innovations in Japan since the 2011 earthquake are not only making lives easier – they may even help save them, writes Clarissa Sebag-Montefiore</p>
+							<div class="spacer"></div>
+						</article>
+					</section>
+
+					<aside id="artlist-aside">
+						<article>
+							<h3>David Tang</h3>
+							<h4>Fusion confusion</h4>
+							<p>What to do when one is approached by too friendly waiters? I always go prepared so that when they stretch their hand out, I hand them my hat, says David Tang</p>
+						</article>
+						<article>
+							<h3>Robin Lane Fox</h3>
+							<h4>Aster way to do it</h4>
+							<p>Forget those vineyards. A runaway planting is a much better way to bring autumn and a garden’s plan to a close, writes Robin Lane Fox</p>
+						</article>
+						<div class="pub">
+							<figure>
+								<img src="pub/dassault.jpeg">
+							</figure>
+						</div>
+					</aside>
+
+					<div class="spacer"></div>
+				</section>
+
+				<footer id="wrap-footer">
+					<p><strong>© The Financial Times Ltd 2012</strong> FT and 'Financial Times' are trademarks of The Financial Times Ltd.</p>
+				</footer>
+
+			</section>
+
+	    </div>
+	    <div>
+			<section id="wrap">
+				<header id="wrap-header">
+					<h1>FT <span>Weekend</span></h1>
+					<h2>Entertainment</h2>
+				</header>
+
+				<section id="content">
+					<article id="alaune">
+						<figure>
+							<img src="articles/gabriel.jpeg">
+						</figure>
+						<h3>Peter Gabriel, O2 Arena, London</h3>
+						<p>Gabriel’s 1986 ‘So’ album is the centrepiece of his world tour</p>
+					</article>
+
+					<section id="artlist">
+						<article>
+							<time>9:51 PM Friday</time>
+							<h3>White lights, big city</h3>
+							<figure>
+								<img src="articles/art4.jpeg">
+							</figure>
+							<p>Despite fears over the eurozone crisis, an increase in tourism has improved prospects for investors and buyers of second homes in Lisbon, writes Mary Wilson</p>
+							<div class="spacer"></div>
+						</article>
+						<article>
+							<time>9:51 PM Friday</time>
+							<h3>Creation out of devastation</h3>
+							<figure>
+								<img src="articles/art5.jpeg">
+							</figure>
+							<p>Innovations in Japan since the 2011 earthquake are not only making lives easier – they may even help save them, writes Clarissa Sebag-Montefiore</p>
+							<div class="spacer"></div>
+						</article>
+						<a href="article1.html">		
+							<article>
+								<time>9:51 PM Friday</time>
+								<h3>At home: Donna Karan</h3>
+								<figure>
+									<img src="articles/art1.jpeg">
+								</figure>
+								<p>The fashion designer and yogi tells Helen Chislett how her late husband, Stephan Weiss, taught her the importance of a process he called ‘connect the dots’</p>
+								<div class="spacer"></div>
+							</article>
+						</a>
+						<article>
+							<time>9:51 PM Friday</time>
+							<h3>White lights, big city</h3>
+							<figure>
+								<img src="articles/art2.jpeg">
+							</figure>
+							<p>Despite fears over the eurozone crisis, an increase in tourism has improved prospects for investors and buyers of second homes in Lisbon, writes Mary Wilson</p>
+							<div class="spacer"></div>
+						</article>
+						<article>
+							<time>9:51 PM Friday</time>
+							<h3>New builds, new Delhi</h3>
+							<figure>
+								<img src="articles/art3.jpeg">
+							</figure>
+							<p>While prices may be high in the Indian capital, there are lots of excellent deals to be found in nearby Noida and Gurgaon, writes Avantika Chilkoti</p>
+							<div class="spacer"></div>
+						</article>
+					</section>
+
+					<aside id="artlist-aside">
+						<article>
+							<h3>Greek, Linbury Studio Theatre, Royal Opera House, London</h3>
+							<p>Small opera companies invariably have small life spans, so it is good to mark the 25th anniversary of that enterprising small opera company, Music Theatre Wales.</p>
+						</article>
+						<article>
+							<h3>Agnes Obel, Union Chapel, London</h3>
+							<p>The BBC’s recent Sound of Cinema season has been an ear-opener. Film scores are the way most of us are exposed to contemporary “classical” music – minimal, piano-led and poignant or portentous according to a movie’s need. “Contemporary” classical is a different matter, of course.</p>
+						</article>
+						<article>
+							<h3>Two Boys, Metropolitan Opera, New York</h3>
+							<p>Nico Muhly’s Two Boys, which had its US premiere on Monday, is morbid, sordid and foolish. It probably was all this when first performed at English National Opera in 2011, but the composer and his stellar librettist, Craig Lucas, have reportedly reworked – and lengthened – their soapy opera in the interim.</p>
+						</article>
+						<div class="pub">
+							<figure>
+								<img src="pub/dassault.jpeg">
+							</figure>
+						</div>
+					</aside>
+
+					<div class="spacer"></div>
+				</section>
+
+				<footer id="wrap-footer">
+					<p><strong>© The Financial Times Ltd 2012</strong> FT and 'Financial Times' are trademarks of The Financial Times Ltd.</p>
+				</footer>
+
+			</section>
+
+	    </div>
+	</div>
+</body>
 </html>
